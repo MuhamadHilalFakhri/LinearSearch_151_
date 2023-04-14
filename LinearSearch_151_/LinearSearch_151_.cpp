@@ -33,5 +33,28 @@ void input()
 void LinearSearch()
 {
 	char ch;
-	int comparison;
+	int comparison;		// Number of comparisons
+
+	do
+	{
+		
+		// Accept the number to be started
+		cout << "\nEnter the element you want to search: ";	// Langkah 1
+		int item;
+		cin >> item;
+
+		comparison = 0;
+		for (i = 0; i < n; i++)								// Langkah 2,3, dan 4
+		{
+			comparison++;									// Langkah 5 a found
+			if (arr[i] == item)
+			{
+				cout << "\n" << item << " found at position " << (i + 1) << endl;
+				break;
+			}
+
+		}
+
+
+	}
 }
