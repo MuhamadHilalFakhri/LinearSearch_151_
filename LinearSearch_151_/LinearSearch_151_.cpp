@@ -54,7 +54,17 @@ void LinearSearch()
 			}
 
 		}
+		if (i == n)											// Langkah 5 b not found
+			cout << "\n" << item << " not found in the array\n";
+		cout << "\nNumber of comparisons: " << comparison << endl;
 
+		cout << "n\Continue search (y/n): ";
+		cin >> ch;
+	} while ((ch == 'y') || (ch == 'Y'));
+}
 
-	}
+int main()
+{
+	input();
+	LinearSearch();
 }
